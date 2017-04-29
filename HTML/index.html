@@ -6,9 +6,95 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aprendiendo HTML</title>
+    <link rel="icon" href="angular.ico">
+    <!--<style>
+        ol>li{
+            list-style-type: none;
+            background-color: cadetblue;
+            color: white;
+            width: 100px;
+            float:left;
+        }
+        li:hover{
+            cursor: pointer;
+        }
+
+        ul>li{
+            display: none;
+        }
+        ul>li:hover{
+            display: block;
+        }
+    </style>-->
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        #registro{
+            background-color: cadetblue;
+            width: 500px;
+            height: 300px;
+            padding-top: 100px;
+            text-align: center;
+        }
+    </style>
 </head>
-<body>
-<h1>Santiago Lema</h1>
-<img src="https://scontent-mia1-2.xx.fbcdn.net/v/t1.0-9/16807016_630964087086982_8341493664761407712_n.jpg?oh=622e46dbf3ec7ac649548d6bd7218252&oe=5978BAD1" alt="Santiago Lema">
-</body>
+    <body>
+        <h1>Santiago Lema</h1>
+        <img src="https://scontent-mia1-2.xx.fbcdn.net/v/t1.0-9/16807016_630964087086982_8341493664761407712_n.jpg?oh=622e46dbf3ec7ac649548d6bd7218252&oe=5978BAD1" alt="Santiago Lema">
+
+        <ol>
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+            <li>Cutro</li>
+            <li>Cinco
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ul>
+            </li>
+        </ol>
+
+        <table>
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+            <tr>
+                <td>Santiago</td>
+                <td>Lema</td>
+            </tr>
+        </table>
+
+        <div id="registro">
+            <form action="subirDatos.php">
+                <label for="">Tipo texto</label>
+                <input type="text">
+                <br>
+                <label for="">Tipo password</label>
+                <input type="password">
+                <br>
+                <label for="">Tipo email</label>
+                <input type="email">
+                <br>
+                <label for="">Tipo archivo</label>
+                <input type="file">
+                <br>
+                <button type="submit">Submit</button>
+                <br>
+                <button type="button">Button</button>
+                <br>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+
+    </body>
 </html>
