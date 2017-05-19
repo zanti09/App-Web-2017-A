@@ -1,0 +1,31 @@
+body{
+    perspective: 800px;
+}
+button{
+    border: none;
+    background-color: mediumaquamarine;
+    color: white;
+    width:500px;
+    height: 500px;
+    animation-name: jump;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jump {
+    0%{
+        transform: translateX(0px) translateZ(0px);
+    }
+    25%{
+        transform: translateX(100px)  rotateY(180deg);
+    }
+    50%{
+        transform: translateX(200px)  rotateY(0deg);
+    }
+    75%{
+        transform: translateX(100px)  rotateY(180deg);
+    }
+    100%{
+        transform: translateX(0px) translateZ(0px);
+    }
+}
